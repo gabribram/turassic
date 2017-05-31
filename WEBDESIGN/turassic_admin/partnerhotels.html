@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+    <!--[if IE 9 ]><html class="ie9"><![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Turassic Admin</title>
+        <!--Vendor CSS-->
+        <link href="vendors/bower_components/animate.css/animate.min.css" rel="stylesheet">
+        <link href="vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">
+        <link href="vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+        <link href="vendors/bower_components/google-material-color/dist/palette.css" rel="stylesheet">
+        <!--CSS-->
+        <link href="css/app.min.1.css" rel="stylesheet">
+        <link href="css/app.min.2.css" rel="stylesheet">
+        <!-- Following CSS is used only fore demo purposes thus you can remove anytime -->
+        <link href="css/demo.css" rel="stylesheet">
+    </head>
+    <body data-ma-header="teal">
+    <header id="header" class="media">
+        <div class="pull-left h-logo">
+            <a href="index.html" class="hidden-xs">
+             TURASSIC   
+             <small>admin panel</small>
+         </a>
+
+         <div class="menu-collapse" data-ma-action="sidebar-open" data-ma-target="main-menu">
+            <div class="mc-wrap">
+                <div class="mcw-line top palette-White bg"></div>
+                <div class="mcw-line center palette-White bg"></div>
+                <div class="mcw-line bottom palette-White bg"></div>
+            </div>
+        </div>
+    </div>
+
+    <ul class="pull-right h-menu">
+        <li class="hm-search-trigger">
+            <a href="" data-ma-action="search-open">
+                <i class="hm-icon zmdi zmdi-search"></i>
+            </a>
+        </li>
+        <li class="dropdown hm-profile">
+            <a data-toggle="dropdown" href="">
+                <img src="img/profile-pics/1.jpg" alt="">
+            </a>
+
+            <ul class="dropdown-menu pull-right dm-icon">
+                
+                <li>
+                    <a href="login.html"><i class="zmdi zmdi-time-restore"></i> Logout</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <div class="media-body h-search">
+        <form class="p-relative">
+            <input type="text" class="hs-input" placeholder="Search for people, files & reports">
+            <i class="zmdi zmdi-search hs-reset" data-ma-action="search-clear"></i>
+        </form>
+    </div>
+
+</header>
+
+<section id="main">
+    <aside id="s-user-alerts" class="sidebar">
+        <ul class="tab-nav tn-justified tn-icon m-t-10" data-tab-color="teal">
+            <li><a class="sua-messages" href="#sua-messages" data-toggle="tab"><i class="zmdi zmdi-email"></i></a></li>
+            <li><a class="sua-notifications" href="#sua-notifications" data-toggle="tab"><i class="zmdi zmdi-notifications"></i></a></li>
+            
+        </ul>
+
+        <div class="tab-content">
+            <div class="tab-pane fade" id="sua-messages">
+                <ul class="sua-menu list-inline list-unstyled palette-Light-Blue bg">
+                    <li><a href=""><i class="zmdi zmdi-check-all"></i> Mark all</a></li>
+                    <li><a href="messages.html"><i class="zmdi zmdi-long-arrow-tab"></i> View all</a></li>
+                    <li><a href="" data-ma-action="sidebar-close"><i class="zmdi zmdi-close"></i> Close</a></li>
+                </ul>
+
+                <div class="list-group lg-alt c-overflow">
+                    <a href="messages.html" class="list-group-item media">
+                        <div class="pull-left">
+                            <img class="avatar-img" src="img/profile-pics/1.jpg" alt="">
+                        </div>
+
+                        <div class="media-body">
+                            <div class="lgi-heading">David Villa Jacobs</div>
+                            <small class="lgi-text">Sorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis lobortis sapien non posuere</small>
+                        </div>
+                    </a>
+
+                    <a href="messages.html" class="list-group-item media">
+                        <div class="pull-left">
+                            <img class="avatar-img" src="img/profile-pics/5.jpg" alt="">
+                        </div>
+                        <div class="media-body">
+                            <div class="lgi-heading">Candice Barnes</div>
+                            <small class="lgi-text">Quisque non tortor ultricies, posuere elit id, lacinia purus curabitur.</small>
+                        </div>
+                    </a>
+
+                    <a href="messages.html" class="list-group-item media">
+                        <div class="pull-left">
+                            <img class="avatar-img" src="img/profile-pics/3.jpg" alt="">
+                        </div>
+                        <div class="media-body">
+                            <div class="lgi-heading">Jeannette Lawson</div>
+                            <small class="lgi-text">Donec congue tempus ligula, varius hendrerit mi hendrerit sit amet. Duis ac quam sit amet leo feugiat iaculis</small>
+                        </div>
+                    </a>
+
+                    <a href="messages.html" class="list-group-item media">
+                        <div class="pull-left">
+                            <img class="avatar-img" src="img/profile-pics/4.jpg" alt="">
+                        </div>
+                        <div class="media-body">
+                            <div class="lgi-heading">Darla Mckinney</div>
+                            <small class="lgi-text">Duis tincidunt augue nec sem dignissim scelerisque. Vestibulum rhoncus sapien sed nulla aliquam lacinia</small>
+                        </div>
+                    </a>
+
+                    <a href="messages.html" class="list-group-item media">
+                        <div class="pull-left">
+                            <img class="avatar-img" src="img/profile-pics/2.jpg" alt="">
+                        </div>
+                        <div class="media-body">
+                            <div class="lgi-heading">Rudolph Perez</div>
+                            <small class="lgi-text">Phasellus a ullamcorper lectus, sit amet viverra quam. In luctus tortor vel nulla pharetra bibendum</small>
+                        </div>
+                    </a>
+                </div>
+
+                <a href="messages.html" class="btn btn-float btn-danger m-btn">
+                    <i class="zmdi zmdi-plus"></i>
+                </a>
+            </div>
+            <div class="tab-pane fade" id="sua-notifications">
+                <ul class="sua-menu list-inline list-unstyled palette-Orange bg">
+                    <li><a href=""><i class="zmdi zmdi-volume-off"></i> Mute</a></li>
+                    <li><a href=""><i class="zmdi zmdi-long-arrow-tab"></i> View all</a></li>
+                    <li><a href="" data-ma-action="sidebar-close"><i class="zmdi zmdi-close"></i> Close</a></li>
+                </ul>
+
+                <div class="list-group lg-alt c-overflow">
+                    <a href="" class="list-group-item media">
+                        <div class="pull-left">
+                            <img class="avatar-img" src="img/profile-pics/1.jpg" alt="">
+                        </div>
+
+                        <div class="media-body">
+                            <div class="lgi-heading">David Villa Jacobs</div>
+                            <small class="lgi-text">Sorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis lobortis sapien non posuere</small>
+                        </div>
+                    </a>
+
+                    <a href="" class="list-group-item media">
+                        <div class="pull-left">
+                            <img class="avatar-img" src="img/profile-pics/5.jpg" alt="">
+                        </div>
+                        <div class="media-body">
+                            <div class="lgi-heading">Candice Barnes</div>
+                            <small class="lgi-text">Quisque non tortor ultricies, posuere elit id, lacinia purus curabitur.</small>
+                        </div>
+                    </a>
+
+                    <a href="" class="list-group-item media">
+                        <div class="pull-left">
+                            <img class="avatar-img" src="img/profile-pics/3.jpg" alt="">
+                        </div>
+                        <div class="media-body">
+                            <div class="lgi-heading">Jeannette Lawson</div>
+                            <small class="lgi-text">Donec congue tempus ligula, varius hendrerit mi hendrerit sit amet. Duis ac quam sit amet leo feugiat iaculis</small>
+                        </div>
+                    </a>
+
+                    <a href="" class="list-group-item media">
+                        <div class="pull-left">
+                            <img class="avatar-img" src="img/profile-pics/4.jpg" alt="">
+                        </div>
+                        <div class="media-body">
+                            <div class="lgi-heading">Darla Mckinney</div>
+                            <small class="lgi-text">Duis tincidunt augue nec sem dignissim scelerisque. Vestibulum rhoncus sapien sed nulla aliquam lacinia</small>
+                        </div>
+                    </a>
+
+                    <a href="" class="list-group-item media">
+                        <div class="pull-left">
+                            <img class="avatar-img" src="img/profile-pics/2.jpg" alt="">
+                        </div>
+                        <div class="media-body">
+                            <div class="lgi-heading">Rudolph Perez</div>
+                            <small class="lgi-text">Phasellus a ullamcorper lectus, sit amet viverra quam. In luctus tortor vel nulla pharetra bibendum</small>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <aside id="s-main-menu" class="sidebar">
+        <div class="smm-header">
+            <i class="zmdi zmdi-long-arrow-left" data-ma-action="sidebar-close"></i>
+        </div>
+
+        <ul class="smm-alerts">
+            <li class="active" data-user-alert="sua-messages" data-ma-action="sidebar-open" data-ma-target="user-alerts">
+                <i class="zmdi zmdi-email"></i>
+            </li>
+            <li data-user-alert="sua-notifications" data-ma-action="sidebar-open" data-ma-target="user-alerts">
+                <i class="zmdi zmdi-notifications"></i>
+            </li>
+            
+        </ul>
+
+        <ul class="main-menu">
+            <li >
+                <a href="index.html"><i class="zmdi zmdi-home"></i> Reports</a>
+            </li>
+            <li >
+                <a href="data-tables.html"><i class="zmdi zmdi-accounts-add"></i> User</a>
+            </li>
+            <li >
+                <a href="data-tables_rent.html"><i class="zmdi zmdi-card-membership"></i>Cars report history</a>
+            </li>
+            <li class="active"><a href="data-tables-partnerhotels.html"><i class="zmdi zmdi-hotel"></i>PartnerHotel</a></li>
+            <li ><a href="data-tables-kioskmachine.html"><i class="zmdi zmdi-remote-control-alt"></i>Kiosk Machine</a></li>
+            <li class="sub-menu">
+                <a href="" data-ma-action="submenu-toggle"><i class="zmdi zmdi-view-compact"></i>HomePage</a>
+
+                <ul>
+                    <li><a href="home-dialog.html">Dialoge</a></li>
+                    <li><a href="home-slider.html">Slider</a></li>
+                    <li><a href="home-aboutus.html">About us</a></li>
+                    <li><a href="home-howitworks.html">How it work</a></li>
+                    <li><a href="home-faq.html">Faq</a></li>
+                    <li><a href="home-contact.html">Contact us</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </aside>
+
+            <section id="content">
+                <div class="container">
+                    <div class="c-header">
+                        <h2>PARHTERHOTELS</h2>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>The Roosevelt Hotel, New York City
+                               <small>This twitter bootstrap plugin builds a wizard out of a formatter tabbable structure. It allows to build a wizard functionality using buttons to go through the different wizard steps and using events allows to hook into each step individually.</small></h2>
+                        </div>
+
+                        <div class="card-body card-padding">
+                            <div class="form-wizard-basic fw-container">
+                                <ul class="tab-nav text-center">
+                                    <li><a href="#tab1" data-toggle="tab">HOTEL INFORMATION</a></li>
+                                    <li><a href="#tab2" data-toggle="tab">CONTACT INFORMATION</a></li>
+                                                                    
+                                </ul>
+
+                                <div class="tab-content">
+                                    <div class="tab-pane fade" id="tab1">
+                                        <div class="row">
+                                            <div class="col-sm-3" ><p align="right"><strong>HOTEL NAME:</strong></p></div>
+                                            <div class="col-sm-4" >The Roosevelt Hotel, New York City</div>
+                                            
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3" ><p align="right"><strong>ADDRESS(LINE ONE):</strong></p></div>
+                                            <div class="col-sm-4" >Stationsplein 47, 1012 AB Amsterdam</div>
+                                            
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3" ><p align="right"><strong>ADDRESS(LINE TWO):</strong></p></div>
+                                            <div class="col-sm-4" >Stationsplein 47, 1012 AB Amsterdam</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3" ><p align="right"><strong>CITY:</strong></p></div>
+                                            <div class="col-sm-4" >Amsterdam</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3" ><p align="right"><strong>STATE/PROVINCE:</strong></p></div>
+                                            <div class="col-sm-4" >Amsterdam</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3" ><p align="right"><strong>ZIP CODE:</strong></p></div>
+                                            <div class="col-sm-4">1234</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3" ><p align="right"><strong>WEB SITE:</strong></p></div>
+                                            <div class="col-sm-4">www.turassic.com</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3" ><p align="right"><strong>TELEPHONE:</strong></p></div>
+                                            <div class="col-sm-4">123-2342-2333</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3" ><p align="right"><strong>FAX:</strong></p></div>
+                                            <div class="col-sm-4">123-2342-2333</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3" ><p align="right"><strong>EMAIL:</strong></p></div>
+                                            <div class="col-sm-4">rasdf@mail.com</div>
+                                        </div>
+
+                                    </div>
+                                    <div class="tab-pane fade" id="tab2">
+                                        <div class="row">
+                                            <div class="col-sm-3"><p align="right"><strong>FIRST NAME:</strong></p></div>
+                                            <div class="col-sm-3">Riyard</div>
+                                            <div class="col-sm-3"><p align="right"><strong>LAST NAME:</strong></p></div>
+                                            <div class="col-sm-3">Riyard</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3"><p align="right"><strong>TITLE:</strong></p></div>
+                                            <div class="col-sm-9">Manager</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3"><p align="right"><strong>POSITION:</strong></p></div>
+                                            <div class="col-sm-9">Stationsplein 47, 1012 AB Amsterdam, Netherlands</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3"><p align="right"><strong>CELL PHONE:</strong></p></div>
+                                            <div class="col-sm-3"><p align="right"><strong>COUNTRY CODE:</strong></p></div>
+                                            <div class="col-sm-2">+832</div>
+                                            <div class="col-sm-2"><p align="right"><strong>NUMBER:</strong></p></div>
+                                            <div class="col-sm-2">123-1234-3334</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3"><p align="right"><strong>WORK PHONE:</strong></p></div>
+                                            <div class="col-sm-3"><p align="right"><strong>COUNTRY CODE:</strong></p></div>
+                                            <div class="col-sm-2">+832</div>
+                                            <div class="col-sm-2"><p align="right"><strong>NUMBER:</strong></p></div>
+                                            <div class="col-sm-2">123-1234-3334</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3"><p align="right"><strong>EMAIL:</strong></p></div>
+                                            <div class="col-sm-3">contact@mail.com</div>
+                                            <div class="col-sm-3"><p align="right"><strong>CHARGE PAYMENT(To keeping cars on parking):</strong></p></div>
+                                            <div class="col-sm-3" style="color: red;">10%</div>
+                                        </div>  
+                                    </div>
+                                    
+                                    <ul class="fw-footer pagination wizard">
+                                        <li class="previous first"><a class="a-prevent" href=""><i class="zmdi zmdi-more-horiz"></i></a></li>
+                                        <li class="previous"><a class="a-prevent" href=""><i class="zmdi zmdi-chevron-left"></i></a></li>
+                                        <li class="next"><a class="a-prevent" href=""><i class="zmdi zmdi-chevron-right"></i></a></li>
+                                        <li class="next last"><a class="a-prevent" href=""><i class="zmdi zmdi-more-horiz"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="action-header palette-Teal-400 bg clearfix">
+                            <div class="ah-label hidden-xs palette-White text">Rent avaialble car list</div>
+
+                            <div class="ah-search">
+                                <input type="text" placeholder="Start typing..." class="ahs-input">
+
+                                <i class="ah-search-close zmdi zmdi-long-arrow-left" data-ma-action="ah-search-close"></i>
+                            </div>
+
+                            <ul class="ah-actions actions a-alt">
+                                <li>
+                                    <a href="" class="ah-search-trigger" data-ma-action="ah-search-open">
+                                        <i class="zmdi zmdi-search"></i>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="">
+                                        <i class="zmdi zmdi-time"></i>
+                                    </a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="" data-toggle="dropdown" aria-expanded="true">
+                                        <i class="zmdi zmdi-sort"></i>
+                                    </a>
+
+                                    <ul class="dropdown-menu dropdown-menu-right">
+                                        <li>
+                                            <a href="">Last Modified</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Last Edited</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Name</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Date</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="zmdi zmdi-info"></i>
+                                    </a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="" data-toggle="dropdown" aria-expanded="true">
+                                        <i class="zmdi zmdi-more-vert"></i>
+                                    </a>
+
+                                    <ul class="dropdown-menu dropdown-menu-right">
+                                        <li>
+                                            <a href="">Refresh</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Listview Settings</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="list-group lg-alt lg-even-black">
+                            <div class="list-group-item media">
+                                <div class="pull-left">
+                                    <img class="avatar-img" src="img/car/1.png" alt="">
+                                </div>
+
+                                <div class="pull-right">
+                                    <ul class="actions">
+                                        <li class="dropdown">
+                                            <a href="" data-toggle="dropdown" aria-expanded="false">
+                                                <i class="zmdi zmdi-more-vert"></i>
+                                            </a>
+
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                
+                                                <li>
+                                                    <a href="#modalDefault" data-target-color="green" data-toggle="modal">Details</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="media-body">
+                                    <div class="lgi-heading">Skoda Citigo or similar – Manual</div>
+                                    <small class="lgi-text"><strong>TYPE:&nbsp</strong>manual<strong>&nbsp&nbsp&nbspMODEL:&nbsp</strong>manual<strong>&nbsp&nbsp&nbspYEAR:&nbsp</strong>2015<strong>&nbsp&nbsp&nbspHOURLY RENTAL RATE:&nbsp</strong>$10/hr</small>
+                                </div>
+                            </div>
+
+                            <div class="list-group-item media">
+                                <div class="pull-left">
+                                    <img class="avatar-img" src="img/car/2.png" alt="">
+                                </div>
+
+                                <div class="pull-right">
+                                    <ul class="actions">
+                                        <li class="dropdown">
+                                            <a href="" data-toggle="dropdown" aria-expanded="false">
+                                                <i class="zmdi zmdi-more-vert"></i>
+                                            </a>
+
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                
+                                                <li>
+                                                    <a href="#modalDefault" data-target-color="green" data-toggle="modal">Details</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="media-body">
+                                    <div class="lgi-heading">Skoda Citigo or similar – Manual</div>
+                                    <small class="lgi-text"><strong>TYPE:&nbsp</strong>manual<strong>&nbsp&nbsp&nbspMODEL:&nbsp</strong>manual<strong>&nbsp&nbsp&nbspYEAR:&nbsp</strong>2015<strong>&nbsp&nbsp&nbspHOURLY RENTAL RATE:&nbsp</strong>$10/hr</small>
+                                </div>
+                            </div>
+
+                            <div class="list-group-item media">
+                                <div class="pull-left">
+                                    <img class="avatar-img" src="img/car/3.png" alt="">
+                                </div>
+
+                                <div class="pull-right">
+                                    <ul class="actions">
+                                        <li class="dropdown">
+                                            <a href="" data-toggle="dropdown" aria-expanded="false">
+                                                <i class="zmdi zmdi-more-vert"></i>
+                                            </a>
+
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                
+                                                <li>
+                                                    <a href="#modalDefault" data-target-color="green" data-toggle="modal">Details</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="media-body">
+                                    <div class="lgi-heading">Skoda Citigo or similar – Manual</div>
+                                    <small class="lgi-text"><strong>TYPE:&nbsp</strong>manual<strong>&nbsp&nbsp&nbspMODEL:&nbsp</strong>manual<strong>&nbsp&nbsp&nbspYEAR:&nbsp</strong>2015<strong>&nbsp&nbsp&nbspHOURLY RENTAL RATE:&nbsp</strong>$10/hr</small>
+                                </div>
+                            </div>
+
+                            <div class="list-group-item media">
+                                <div class="pull-left">
+                                    <img class="avatar-img" src="img/car/4.png" alt="">
+                                </div>
+
+                                <div class="pull-right">
+                                    <ul class="actions">
+                                        <li class="dropdown">
+                                            <a href="" data-toggle="dropdown" aria-expanded="false">
+                                                <i class="zmdi zmdi-more-vert"></i>
+                                            </a>
+
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                
+                                                <li>
+                                                    <a href="#modalDefault" data-target-color="green" data-toggle="modal">Details</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="media-body">
+                                    <div class="lgi-heading">Skoda Citigo or similar – Manual</div>
+                                    <small class="lgi-text"><strong>TYPE:&nbsp</strong>manual<strong>&nbsp&nbsp&nbspMODEL:&nbsp</strong>manual<strong>&nbsp&nbsp&nbspYEAR:&nbsp</strong>2015<strong>&nbsp&nbsp&nbspHOURLY RENTAL RATE:&nbsp</strong>$10/hr</small>
+                                </div>
+                            </div>
+
+                            <div class="list-group-item media">
+                                <div class="pull-left">
+                                    <img class="avatar-img" src="img/car/5.png" alt="">
+                                </div>
+
+                                <div class="pull-right">
+                                    <ul class="actions">
+                                        <li class="dropdown">
+                                            <a href="" data-toggle="dropdown" aria-expanded="false">
+                                                <i class="zmdi zmdi-more-vert"></i>
+                                            </a>
+
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                
+                                                <li>
+                                                    <a href="#modalDefault" data-target-color="green" data-toggle="modal">Details</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="media-body">
+                                    <div class="lgi-heading">Skoda Citigo or similar – Manual</div>
+                                    <small class="lgi-text"><strong>TYPE:&nbsp</strong>manual<strong>&nbsp&nbsp&nbspMODEL:&nbsp</strong>manual<strong>&nbsp&nbsp&nbspYEAR:&nbsp</strong>2015<strong>&nbsp&nbsp&nbspHOURLY RENTAL RATE:&nbsp</strong>$10/hr</small>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+
+                            
+                        </div>
+
+                        <ul class="pagination lg-pagination">
+                            <li>
+                                <a href="" aria-label="Previous">
+                                    <i class="zmdi zmdi-chevron-left"></i>
+                                </a>
+                            </li>
+                            <li class="active"><a href="">1</a></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li><a href="">4</a></li>
+                            <li><a href="">5</a></li>
+                            <li>
+                                <a href="" aria-label="Next">
+                                    <i class="zmdi zmdi-chevron-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>    
+
+
+
+                </div>
+                <!-- <button class="btn btn-float bgm-red m-btn" data-action="print"><i class="zmdi zmdi-plus"></i></button> -->
+                <a href="rentcar-register.html" class="btn btn-float bgm-red m-btn" data-trigger="hover" data-toggle="popover" data-placement="top" data-content="Pleaes click to register car on our service." title="" data-original-title="Register Rental car"><i class="zmdi zmdi-plus"></i></a>
+            </section>
+
+            <footer id="footer">
+                Copyright &copy; 2015 Material Admin
+
+                <ul class="f-menu">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Dashboard</a></li>
+                    <li><a href="">Reports</a></li>
+                    <li><a href="">Support</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </footer>
+        </section>
+
+        <!-- Page Loader -->
+        <div class="page-loader palette-Teal bg">
+            <div class="preloader pl-xl pls-white">
+                <svg class="pl-circular" viewBox="25 25 50 50">
+                    <circle class="plc-path" cx="50" cy="50" r="20"/>
+                </svg>
+            </div>
+        </div>
+
+
+
+        <div class="modal fade" data-modal-color="teal" id="modalDefault" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Skoda Citigo or similar</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/car/1.png" class="img-responsive">
+                        <p><strong>Capatity of passenger:&nbsp</strong>4</p>
+                        <p><strong>Capacity of language:&nbsp</strong>english,french</p>
+                        <p><strong>Fule consumption:&nbsp</strong>petrol</p>
+                        <p>The Citigo is a great little city car and very budget friendly. Perfect for exploring the city and for shorter tours. Recommended for no more than 2-3 people with luggage, as cargo capacity is limited. Not suitable for highland F-roads.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Older IE warning message -->
+        <!--[if lt IE 9]>
+            <div class="ie-warning">
+                <h1 class="c-white">Warning!!</h1>
+                <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
+                <div class="iew-container">
+                    <ul class="iew-download">
+                        <li>
+                            <a href="http://www.google.com/chrome/">
+                                <img src="img/browsers/chrome.png" alt="">
+                                <div>Chrome</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.mozilla.org/en-US/firefox/new/">
+                                <img src="img/browsers/firefox.png" alt="">
+                                <div>Firefox</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.opera.com">
+                                <img src="img/browsers/opera.png" alt="">
+                                <div>Opera</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.apple.com/safari/">
+                                <img src="img/browsers/safari.png" alt="">
+                                <div>Safari</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                                <img src="img/browsers/ie.png" alt="">
+                                <div>IE (New)</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <p>Sorry for the inconvenience!</p>
+            </div>   
+        <![endif]-->
+
+        <!-- Javascript Libraries -->
+        <script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        
+        <script src="vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="vendors/bower_components/Waves/dist/waves.min.js"></script>
+        <script src="vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
+        <script src="vendors/bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
+        
+        <!-- Placeholder for IE9 -->
+        <!--[if IE 9 ]>
+            <script src="vendors/bower_components/jquery-placeholder/jquery.placeholder.min.js"></script>
+        <![endif]-->
+        
+        <script src="js/functions.js"></script>
+        <script src="js/actions.js"></script>
+        <script src="js/demo.js"></script>
+    </body>
+</html>
+<!-- Localized -->

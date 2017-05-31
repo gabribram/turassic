@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+    <!--[if IE 9 ]><html class="ie9"><![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Turassic Admin</title>
+        
+        <!-- Vendor CSS -->
+        <link href="vendors/bower_components/animate.css/animate.min.css" rel="stylesheet">
+        <link href="vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">
+        <link href="vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+        <link href="vendors/bower_components/google-material-color/dist/palette.css" rel="stylesheet">
+
+        <!-- CSS -->
+        <link href="css/app.min.1.css" rel="stylesheet">
+        <link href="css/app.min.2.css" rel="stylesheet">
+    </head>
+
+    <body data-ma-header="teal">
+    <header id="header" class="media">
+        <div class="pull-left h-logo">
+            <a href="index.html" class="hidden-xs">
+             TURASSIC   
+             <small>admin panel</small>
+         </a>
+
+         <div class="menu-collapse" data-ma-action="sidebar-open" data-ma-target="main-menu">
+            <div class="mc-wrap">
+                <div class="mcw-line top palette-White bg"></div>
+                <div class="mcw-line center palette-White bg"></div>
+                <div class="mcw-line bottom palette-White bg"></div>
+            </div>
+        </div>
+    </div>
+
+    <ul class="pull-right h-menu">
+        <li class="hm-search-trigger">
+            <a href="" data-ma-action="search-open">
+                <i class="hm-icon zmdi zmdi-search"></i>
+            </a>
+        </li>
+        <li class="dropdown hm-profile">
+            <a data-toggle="dropdown" href="">
+                <img src="img/profile-pics/1.jpg" alt="">
+            </a>
+
+            <ul class="dropdown-menu pull-right dm-icon">
+                
+                <li>
+                    <a href="login.html"><i class="zmdi zmdi-time-restore"></i> Logout</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <div class="media-body h-search">
+        <form class="p-relative">
+            <input type="text" class="hs-input" placeholder="Search for people, files & reports">
+            <i class="zmdi zmdi-search hs-reset" data-ma-action="search-clear"></i>
+        </form>
+    </div>
+
+</header>
+
+<section id="main">
+    <aside id="s-user-alerts" class="sidebar">
+        <ul class="tab-nav tn-justified tn-icon m-t-10" data-tab-color="teal">
+            <li><a class="sua-messages" href="#sua-messages" data-toggle="tab"><i class="zmdi zmdi-email"></i></a></li>
+            <li><a class="sua-notifications" href="#sua-notifications" data-toggle="tab"><i class="zmdi zmdi-notifications"></i></a></li>
+            
+        </ul>
+
+        <div class="tab-content">
+            <div class="tab-pane fade" id="sua-messages">
+                <ul class="sua-menu list-inline list-unstyled palette-Light-Blue bg">
+                    <li><a href=""><i class="zmdi zmdi-check-all"></i> Mark all</a></li>
+                    <li><a href="messages.html"><i class="zmdi zmdi-long-arrow-tab"></i> View all</a></li>
+                    <li><a href="" data-ma-action="sidebar-close"><i class="zmdi zmdi-close"></i> Close</a></li>
+                </ul>
+
+                <div class="list-group lg-alt c-overflow">
+                    <a href="messages.html" class="list-group-item media">
+                        <div class="pull-left">
+                            <img class="avatar-img" src="img/profile-pics/1.jpg" alt="">
+                        </div>
+
+                        <div class="media-body">
+                            <div class="lgi-heading">David Villa Jacobs</div>
+                            <small class="lgi-text">Sorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis lobortis sapien non posuere</small>
+                        </div>
+                    </a>
+
+                    <a href="messages.html" class="list-group-item media">
+                        <div class="pull-left">
+                            <img class="avatar-img" src="img/profile-pics/5.jpg" alt="">
+                        </div>
+                        <div class="media-body">
+                            <div class="lgi-heading">Candice Barnes</div>
+                            <small class="lgi-text">Quisque non tortor ultricies, posuere elit id, lacinia purus curabitur.</small>
+                        </div>
+                    </a>
+
+                    <a href="messages.html" class="list-group-item media">
+                        <div class="pull-left">
+                            <img class="avatar-img" src="img/profile-pics/3.jpg" alt="">
+                        </div>
+                        <div class="media-body">
+                            <div class="lgi-heading">Jeannette Lawson</div>
+                            <small class="lgi-text">Donec congue tempus ligula, varius hendrerit mi hendrerit sit amet. Duis ac quam sit amet leo feugiat iaculis</small>
+                        </div>
+                    </a>
+
+                    <a href="messages.html" class="list-group-item media">
+                        <div class="pull-left">
+                            <img class="avatar-img" src="img/profile-pics/4.jpg" alt="">
+                        </div>
+                        <div class="media-body">
+                            <div class="lgi-heading">Darla Mckinney</div>
+                            <small class="lgi-text">Duis tincidunt augue nec sem dignissim scelerisque. Vestibulum rhoncus sapien sed nulla aliquam lacinia</small>
+                        </div>
+                    </a>
+
+                    <a href="messages.html" class="list-group-item media">
+                        <div class="pull-left">
+                            <img class="avatar-img" src="img/profile-pics/2.jpg" alt="">
+                        </div>
+                        <div class="media-body">
+                            <div class="lgi-heading">Rudolph Perez</div>
+                            <small class="lgi-text">Phasellus a ullamcorper lectus, sit amet viverra quam. In luctus tortor vel nulla pharetra bibendum</small>
+                        </div>
+                    </a>
+                </div>
+
+                <a href="messages.html" class="btn btn-float btn-danger m-btn">
+                    <i class="zmdi zmdi-plus"></i>
+                </a>
+            </div>
+            <div class="tab-pane fade" id="sua-notifications">
+                <ul class="sua-menu list-inline list-unstyled palette-Orange bg">
+                    <li><a href=""><i class="zmdi zmdi-volume-off"></i> Mute</a></li>
+                    <li><a href=""><i class="zmdi zmdi-long-arrow-tab"></i> View all</a></li>
+                    <li><a href="" data-ma-action="sidebar-close"><i class="zmdi zmdi-close"></i> Close</a></li>
+                </ul>
+
+                <div class="list-group lg-alt c-overflow">
+                    <a href="" class="list-group-item media">
+                        <div class="pull-left">
+                            <img class="avatar-img" src="img/profile-pics/1.jpg" alt="">
+                        </div>
+
+                        <div class="media-body">
+                            <div class="lgi-heading">David Villa Jacobs</div>
+                            <small class="lgi-text">Sorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis lobortis sapien non posuere</small>
+                        </div>
+                    </a>
+
+                    <a href="" class="list-group-item media">
+                        <div class="pull-left">
+                            <img class="avatar-img" src="img/profile-pics/5.jpg" alt="">
+                        </div>
+                        <div class="media-body">
+                            <div class="lgi-heading">Candice Barnes</div>
+                            <small class="lgi-text">Quisque non tortor ultricies, posuere elit id, lacinia purus curabitur.</small>
+                        </div>
+                    </a>
+
+                    <a href="" class="list-group-item media">
+                        <div class="pull-left">
+                            <img class="avatar-img" src="img/profile-pics/3.jpg" alt="">
+                        </div>
+                        <div class="media-body">
+                            <div class="lgi-heading">Jeannette Lawson</div>
+                            <small class="lgi-text">Donec congue tempus ligula, varius hendrerit mi hendrerit sit amet. Duis ac quam sit amet leo feugiat iaculis</small>
+                        </div>
+                    </a>
+
+                    <a href="" class="list-group-item media">
+                        <div class="pull-left">
+                            <img class="avatar-img" src="img/profile-pics/4.jpg" alt="">
+                        </div>
+                        <div class="media-body">
+                            <div class="lgi-heading">Darla Mckinney</div>
+                            <small class="lgi-text">Duis tincidunt augue nec sem dignissim scelerisque. Vestibulum rhoncus sapien sed nulla aliquam lacinia</small>
+                        </div>
+                    </a>
+
+                    <a href="" class="list-group-item media">
+                        <div class="pull-left">
+                            <img class="avatar-img" src="img/profile-pics/2.jpg" alt="">
+                        </div>
+                        <div class="media-body">
+                            <div class="lgi-heading">Rudolph Perez</div>
+                            <small class="lgi-text">Phasellus a ullamcorper lectus, sit amet viverra quam. In luctus tortor vel nulla pharetra bibendum</small>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+   <aside id="s-main-menu" class="sidebar">
+        <div class="smm-header">
+            <i class="zmdi zmdi-long-arrow-left" data-ma-action="sidebar-close"></i>
+        </div>
+
+        <ul class="smm-alerts">
+            <li class="active" data-user-alert="sua-messages" data-ma-action="sidebar-open" data-ma-target="user-alerts">
+                <i class="zmdi zmdi-email"></i>
+            </li>
+            <li data-user-alert="sua-notifications" data-ma-action="sidebar-open" data-ma-target="user-alerts">
+                <i class="zmdi zmdi-notifications"></i>
+            </li>
+            
+        </ul>
+
+        <ul class="main-menu">
+            <li >
+                <a href="index.html"><i class="zmdi zmdi-home"></i> Reports</a>
+            </li>
+            <li >
+                <a href="data-tables.html"><i class="zmdi zmdi-accounts-add"></i> User</a>
+            </li>
+            <li >
+                <a href="data-tables_rent.html"><i class="zmdi zmdi-card-membership"></i>Cars report history</a>
+            </li>
+            <li ><a href="data-tables-partnerhotels.html"><i class="zmdi zmdi-hotel"></i>PartnerHotel</a></li>
+            <li ><a href="data-tables-kioskmachine.html"><i class="zmdi zmdi-remote-control-alt"></i>Kiosk Machine</a></li>
+            <li class="sub-menu">
+                <a href="" data-ma-action="submenu-toggle"><i class="zmdi zmdi-view-compact"></i>HomePage</a>
+
+                <ul>
+                    <li><a href="home-dialog.html">Dialoge</a></li>
+                    <li><a href="home-slider.html">Slider</a></li>
+                    <li><a href="home-aboutus.html">About us</a></li>
+                    <li><a href="home-howitworks.html">How it work</a></li>
+                    <li><a href="home-faq.html">Faq</a></li>
+                    <li><a href="home-contact.html">Contact us</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </aside>
+
+            <section id="content">
+                <div class="container">
+                    <div class="c-header">
+                        <h2>Messages</h2>
+                    </div>
+
+                    <div class="card clearfix" id="messages">
+                        <div class="ms-menu">
+                            <div class="ms-user clearfix palette-Teal-400 bg">
+                                <img src="img/profile-pics/1.jpg" alt="">
+                                <div>Signed in as <br/> m-hollaway@gmail.com</div>
+                            </div>
+
+                            <div class="list-group lg-alt m-t-10">
+                                <a class="list-group-item media" href="">
+                                    <div class="pull-left">
+                                        <img src="img/profile-pics/4.jpg" alt="" class="avatar-img">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lgi-heading">Davil Parnell</div>
+                                        <small class="lgi-text">Fierent fastidii recteque ad pro</small>
+                                    </div>
+                                </a>
+
+                                <a class="list-group-item media" href="">
+                                    <div class="pull-left">
+                                        <img src="img/profile-pics/2.jpg" alt="" class="avatar-img">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lgi-heading">Ann Watkinson</div>
+                                        <small class="lgi-text">Cum sociis natoque penatibus </small>
+                                    </div>
+                                </a>
+
+                                <a class="list-group-item media" href="">
+                                    <div class="pull-left">
+                                        <img src="img/profile-pics/3.jpg" alt="" class="avatar-img">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lgi-heading">Marse Walter</div>
+                                        <small class="lgi-text">Suspendisse sapien ligula</small>
+                                    </div>
+                                </a>
+
+                                <a class="list-group-item media" href="">
+                                    <div class="pull-left">
+                                        <img src="img/profile-pics/2.jpg" alt="" class="avatar-img">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lgi-heading">Jeremy Robbins</div>
+                                        <small class="lgi-text">Phasellus porttitor tellus nec</small>
+                                    </div>
+                                </a>
+
+                                <a class="list-group-item media" href="">
+                                    <div class="pull-left">
+                                        <img src="img/profile-pics/4.jpg" alt="" class="avatar-img">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lgi-heading">Reginald Horace</div>
+                                        <small class="lgi-text">Quisque consequat arcu eget</small>
+                                    </div>
+                                </a>
+
+                                <a class="list-group-item media" href="">
+                                    <div class="pull-left">
+                                        <img src="img/profile-pics/5.jpg" alt="" class="avatar-img">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lgi-heading">Shark Henry</div>
+                                        <small class="lgi-text">Nam lobortis odio et leo maximu</small>
+                                    </div>
+                                </a>
+
+                                <a class="list-group-item media" href="">
+                                    <div class="pull-left">
+                                        <img src="img/profile-pics/2.jpg" alt="" class="avatar-img">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lgi-heading">Paul Van Dack</div>
+                                        <small class="lgi-text">Nam posuere purus sed velit auctor sodales</small>
+                                    </div>
+                                </a>
+
+                                <a class="list-group-item media" href="">
+                                    <div class="pull-left">
+                                        <img src="img/profile-pics/1.jpg" alt="" class="avatar-img">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lgi-heading">James Anderson</div>
+                                        <small class="lgi-text">Vivamus imperdiet sagittis quam</small>
+                                    </div>
+                                </a>
+
+                                <a class="list-group-item media" href="">
+                                    <div class="pull-left">
+                                        <img src="img/profile-pics/3.jpg" alt="" class="avatar-img">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lgi-heading">Kane Williams</div>
+                                        <small class="lgi-text">Suspendisse justo nulla luctus nec</small>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <div class="ms-body">
+                            <div class="action-header clearfix palette-Teal-400 bg">
+                                <div class="ah-label hidden-xs palette-White text">Marsh Walter</div>
+
+                                <div class="menu-collapse visible-xs" data-ma-action="message-toggle">
+                                    <div class="mc-wrap">
+                                        <div class="mcw-line top palette-White bg"></div>
+                                        <div class="mcw-line center palette-White bg"></div>
+                                        <div class="mcw-line bottom palette-White bg"></div>
+                                    </div>
+                                </div>
+
+                                <ul class="actions a-alt">
+                                    <li>
+                                        <a href="">
+                                            <i class="zmdi zmdi-delete"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="zmdi zmdi-check"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="zmdi zmdi-time"></i>
+                                        </a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="" data-toggle="dropdown" aria-expanded="true">
+                                            <i class="zmdi zmdi-sort"></i>
+                                        </a>
+
+                                        <ul class="dropdown-menu dropdown-menu-right">
+                                            <li>
+                                                <a href="">Latest</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Oldest</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="" data-toggle="dropdown" aria-expanded="true">
+                                            <i class="zmdi zmdi-more-vert"></i>
+                                        </a>
+
+                                        <ul class="dropdown-menu dropdown-menu-right">
+                                            <li>
+                                                <a href="">Refresh</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Message Settings</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="list-group lg-alt">
+                                <div class="list-group-item media">
+                                    <div class="pull-left">
+                                        <img class="avatar-img" src="img/profile-pics/1.jpg" alt="">
+                                    </div>
+
+                                    <div class="media-body">
+                                        <div>
+                                            <div class="msb-item">
+                                                Quisque consequat arcu eget odio cursus, ut tempor arcu vestibulum. Etiam ex arcu, porta a urna non, lacinia pellentesque orci. Proin semper sagittis erat, eget condimentum sapien viverra et. Mauris volutpat magna nibh, et condimentum est rutrum a. Nunc sed turpis mi. In eu massa a sem pulvinar lobortis.
+                                            </div>
+                                        </div>
+                                        <small class="ms-date"><i class="zmdi zmdi-time"></i> 20/02/2015 at 09:00</small>
+                                    </div>
+                                </div>
+
+                                <div class="list-group-item media">
+                                    <div class="pull-right">
+                                        <img class="avatar-img" src="img/profile-pics/8.jpg" alt="">
+                                    </div>
+                                    <div class="media-body">
+                                        <div>
+                                            <div class="msb-item">
+                                                Mauris volutpat magna nibh, et condimentum est rutrum a. Nunc sed turpis mi. In eu massa a sem pulvinar lobortis.
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="msb-item">
+                                                Condimentum est rutrum lobortis.
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="msb-item">
+                                                :)
+                                            </div>
+                                        </div>
+                                        <small class="ms-date"><i class="zmdi zmdi-time"></i> 20/02/2015 at 09:30</small>
+                                    </div>
+                                </div>
+
+                                <div class="list-group-item media">
+                                    <div class="pull-left">
+                                        <img class="avatar-img" src="img/profile-pics/1.jpg" alt="">
+                                    </div>
+                                    <div class="media-body">
+                                        <div>
+                                            <div class="msb-item">
+                                                Etiam ex arcumentum
+                                            </div>
+                                        </div>
+                                        <small class="ms-date"><i class="zmdi zmdi-time"></i> 20/02/2015 at 09:33</small>
+                                    </div>
+                                </div>
+
+                                <div class="list-group-item media">
+                                    <div class="pull-right">
+                                        <img class="avatar-img" src="img/profile-pics/8.jpg" alt="">
+                                    </div>
+                                    <div class="media-body">
+                                        <div>
+                                            <div class="msb-item">
+                                                Etiam nec facilisis lacus. Nulla imperdiet augue ullamcorper dui ullamcorper, eu laoreet sem consectetur. Aenean et ligula risus. Praesent sed posuere sem. Cum sociis natoque penatibus et magnis dis parturient montes,
+                                            </div>
+                                        </div>
+                                        <small class="ms-date"><i class="zmdi zmdi-time"></i> 20/02/2015 at 10:10</small>
+                                    </div>
+                                </div>
+
+                                <div class="list-group-item media">
+                                    <div class="pull-left">
+                                        <img class="avatar-img" src="img/profile-pics/1.jpg" alt="">
+                                    </div>
+                                    <div class="media-body">
+                                        <div>
+                                            <div class="msb-item">
+                                                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam ac tortor ut elit sodales varius. Mauris id ipsum id mauris malesuada tincidunt. Vestibulum elit massa, pulvinar at sapien sed, luctus vestibulum eros. Etiam finibus tristique ante, vitae rhoncus sapien volutpat eget
+                                            </div>
+                                        </div>
+                                        <small class="ms-date"><i class="zmdi zmdi-time"></i> 20/02/2015 at 10:24</small>
+                                    </div>
+                                </div>
+
+                                <div class="ms-reply">
+                                    <textarea placeholder="What's on your mind..."></textarea>
+
+                                    <button><i class="zmdi zmdi-mail-send"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer id="footer">
+                Copyright &copy; 2017 Riyad
+
+            </footer>
+        </section>
+
+        <!-- Page Loader -->
+        <div class="page-loader palette-Teal bg">
+            <div class="preloader pl-xl pls-white">
+                <svg class="pl-circular" viewBox="25 25 50 50">
+                    <circle class="plc-path" cx="50" cy="50" r="20"/>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Older IE warning message -->
+        <!--[if lt IE 9]>
+            <div class="ie-warning">
+                <h1 class="c-white">Warning!!</h1>
+                <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
+                <div class="iew-container">
+                    <ul class="iew-download">
+                        <li>
+                            <a href="http://www.google.com/chrome/">
+                                <img src="img/browsers/chrome.png" alt="">
+                                <div>Chrome</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.mozilla.org/en-US/firefox/new/">
+                                <img src="img/browsers/firefox.png" alt="">
+                                <div>Firefox</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.opera.com">
+                                <img src="img/browsers/opera.png" alt="">
+                                <div>Opera</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.apple.com/safari/">
+                                <img src="img/browsers/safari.png" alt="">
+                                <div>Safari</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                                <img src="img/browsers/ie.png" alt="">
+                                <div>IE (New)</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <p>Sorry for the inconvenience!</p>
+            </div>   
+        <![endif]-->
+    
+        <!-- Javascript Libraries -->
+        <script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        
+        <script src="vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="vendors/bower_components/Waves/dist/waves.min.js"></script>
+        <script src="vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
+
+        <!-- Placeholder for IE9 -->
+        <!--[if IE 9 ]>
+            <script src="vendors/bower_components/jquery-placeholder/jquery.placeholder.min.js"></script>
+        <![endif]-->
+        
+        <script src="js/functions.js"></script>
+        <script src="js/actions.js"></script>
+        <script src="js/demo.js"></script>
+    </body>
+</html>
+<!-- Localized -->
