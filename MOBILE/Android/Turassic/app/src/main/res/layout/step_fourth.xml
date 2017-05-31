@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginRight="56dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="56dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="3dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="56dp"
+        tools:layout_constraintLeft_creator="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editText22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="CREDIT CARD TYPE"
+                android:inputType="textPersonName"
+                android:singleLine="true"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/save_button"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintTop_creator="1" />
+
+            <EditText
+                android:id="@+id/editText21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="CREDIT CARD NUMBER"
+                android:inputType="textPersonName"
+                android:singleLine="true"
+                app:layout_constraintLeft_toRightOf="@+id/editText22"
+                app:layout_constraintRight_toRightOf="@+id/editText22"
+                app:layout_constraintTop_toBottomOf="@+id/editText22"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1"
+                tools:layout_constraintTop_creator="1" />
+
+            <EditText
+                android:id="@+id/editText20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="DATE OF EXPIRE"
+                android:inputType="textPersonName"
+                android:singleLine="true"
+                app:layout_constraintLeft_toRightOf="@+id/editText21"
+                app:layout_constraintRight_toRightOf="@+id/editText21"
+                app:layout_constraintTop_toBottomOf="@+id/editText21"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1"
+                tools:layout_constraintTop_creator="1" />
+
+            <EditText
+                android:id="@+id/editText8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="NAME AS APPEARS ON CARD"
+                android:inputType="textPersonName"
+                android:singleLine="true"
+                app:layout_constraintLeft_toRightOf="@+id/editText20"
+                app:layout_constraintRight_toRightOf="@+id/editText20"
+                app:layout_constraintTop_toBottomOf="@+id/editText20"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1"
+                tools:layout_constraintTop_creator="1" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="CCV NUMBER"
+                android:inputType="textPersonName"
+                android:singleLine="true"
+                app:layout_constraintLeft_toRightOf="@+id/editText8"
+                app:layout_constraintRight_toRightOf="@+id/editText8"
+                app:layout_constraintTop_toBottomOf="@+id/editText8"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1"
+                tools:layout_constraintTop_creator="1" />
+
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="8dp" />
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
