@@ -249,6 +249,7 @@ hr {
     height: 100%;
     position: relative;
     background: #000000;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .bs-slider:hover {
     cursor: -moz-grab;
@@ -653,7 +654,7 @@ hr {
     padding-top: 50px;
     vertical-align: middle;
     color: #000000;
-    font-size: 17px;
+    font-size: 15px;
 }
 #title{
   color: #FF9100;
@@ -746,7 +747,7 @@ footer { background-color:#0c1a1e; min-height:50px; font-family: 'Open Sans', sa
 .paddingtop-bottom {  margin-top:50px;}
 .footer-ul { list-style-type:none;  padding-left:0px; margin-left:2px;}
 .footer-ul li { line-height:29px; font-size:12px;}
-.footer-ul li a { color:#a0a3a4; transition: color 0.2s linear 0s, background 0.2s linear 0s; }
+.footer-ul li a { color:#a0a3a4; transition: color 0.2s linear 0s, background 0.2s linear 0s;font-size: 10px; }
 .footer-ul i { margin-right:10px;}
 .footer-ul li a:hover {transition: color 0.2s linear 0s, background 0.2s linear 0s; color:#ff670f; }
 
@@ -766,7 +767,7 @@ footer { background-color:#0c1a1e; min-height:50px; font-family: 'Open Sans', sa
  
  .copyright { min-height:40px; background-color:#000000;}
  .copyright p { text-align:left; color:#FF9100; padding:10px 0; margin-bottom:0px;}
- .heading7 { font-size:21px; font-weight:700; color:#d9d6d6; margin-bottom:22px;}
+ .heading7 { font-size:18px; font-weight:500; color:#d9d6d6; margin-bottom:22px;}
  .post p { font-size:12px; color:#FFF; line-height:20px;}
  .post p span { display:block; color:#8f8f8f;}
  .bottom_ul { list-style-type:none; float:right; margin-bottom:0px;}
@@ -877,10 +878,10 @@ a.btn.btn-lg.btn-primary {
 }
 .details{
     padding: 10px;
-    font-size: 20px;
+    font-size: 15px;
 }
 .fa{
-    font-size: 25px !important;
+    font-size: 15px !important;
     color: #FF9100;
 }
 #main-contact-form-patnerhotel{
@@ -900,7 +901,7 @@ a.btn.btn-lg.btn-primary {
     /*border: 1px solid #FF9100;*/
     border-radius: 2px;
     margin-top: 10px;
-    height: 705px;
+    height: 300px;
 }
 /*patner details*/
 #google-map-patner-details{
@@ -970,7 +971,7 @@ a.btn.btn-lg.btn-primary {
     margin-left: 5px;
 }
 .titlecontatiner{
-  height: 70px;
+  height: 40px;
   background-color: #FF9100;
   margin-bottom: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
